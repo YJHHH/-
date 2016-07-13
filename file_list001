@@ -1,0 +1,310 @@
+#include <stdio.h>
+#include <string.h>
+#define _CRT_SECURE_NO_WARNINGS
+/*
+이름 형식: test_set1_000~test_set1_009 임.
+
+*/
+
+int main()
+{
+	FILE * fp = fopen("test_wav.scp", "wt");
+	
+	char one[16] = "one_00";
+	char one2[16] = "one_0";
+
+	char two[16] = "two_00";
+	char two2[16] = "two_0";
+
+	char three[16] = "three_00";
+	char three2[16] = "three_0";
+
+	char four[16] = "four_00";
+	char four2[16] = "four_0";
+
+	char five[16] = "five_00";
+	char five2[16] = "five_0";
+
+	char six[16] = "six_00";
+	char six2[16] = "six_0";
+
+	char seven[16] = "seven_00";
+	char seven2[16] = "seven_0";
+
+	char eight[16] = "eight_00";
+	char eight2[16] = "eight_0";
+
+	char nine[16] = "nine_00";
+	char nine2[16] = "nine_0";
+
+	char zero[16] = "zero_00";
+	char zero2[16] = "zero_0";
+
+	char str[] = "/home/yjh/digit_recognition/DB/Train_wav/";
+	char str4[] = " </s>";
+	//char digit[10];
+
+	for (int i = 0; i < 100; i++)
+	{
+		if (i < 10)
+		{
+			fputs(one, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(one2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, " ");
+		fputs(str, fp);
+		if (i < 10)
+		{
+			fputs(one, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(one2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, "\n");
+	}
+	for (int i = 0; i < 100; i++)
+	{
+		if (i < 10)
+		{
+			fputs(two, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(two2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, " ");
+		fputs(str, fp);
+		if (i < 10)
+		{
+			fputs(two, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(two2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, "\n");
+	}
+	for (int i = 0; i < 100; i++)
+	{
+		if (i < 10)
+		{
+			fputs(three, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(three2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, " ");
+		fputs(str, fp);
+		if (i < 10)
+		{
+			fputs(three, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(three2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, "\n");
+	}
+	for (int i = 0; i < 100; i++)
+	{
+		if (i < 10)
+		{
+			fputs(four, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(four2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, " ");
+		fputs(str, fp);
+		if (i < 10)
+		{
+			fputs(four, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(four2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, "\n");
+	}
+	for (int i = 0; i < 100; i++)
+	{
+		if (i < 10)
+		{
+			fputs(five, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(five2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, " ");
+		fputs(str, fp);
+		if (i < 10)
+		{
+			fputs(five, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(five2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, "\n");
+	}
+	for (int i = 0; i < 100; i++)
+	{
+		if (i < 10)
+		{
+			fputs(six, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(six2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, " ");
+		fputs(str, fp);
+		if (i < 10)
+		{
+			fputs(six, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(six2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, "\n");
+	}
+	for (int i = 0; i < 100; i++)
+	{
+		if (i < 10)
+		{
+			fputs(seven, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(seven2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, " ");
+		fputs(str, fp);
+		if (i < 10)
+		{
+			fputs(seven, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(seven2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, "\n");
+	}
+	for (int i = 0; i < 100; i++)
+	{
+		if (i < 10)
+		{
+			fputs(eight, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(eight2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, " ");
+		fputs(str, fp);
+		if (i < 10)
+		{
+			fputs(eight, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(eight2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, "\n");
+	}
+	for (int i = 0; i < 100; i++)
+	{
+		if (i < 10)
+		{
+			fputs(nine, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(nine2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, " ");
+		fputs(str, fp);
+		if (i < 10)
+		{
+			fputs(nine, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(nine2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, "\n");
+	}
+	for (int i = 0; i < 100; i++)
+	{
+		if (i < 10)
+		{
+			fputs(zero, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(zero2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, " ");
+		fputs(str, fp);
+		if (i < 10)
+		{
+			fputs(zero, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		else
+		{
+			fputs(zero2, fp);
+			fprintf(fp, "%d.wav", i);
+		}
+		fprintf(fp, "\n");
+	}
+	fclose(fp);
+	printf("빌드 성공\n");
+	return 0;
+}
